@@ -1,0 +1,5 @@
+# GitHub Linguist language detection
+threadsflow/**/*.py linguist-detectable=true
+ts/src/**/*.ts linguist-detectable=true
+ts/dist/** linguist-vendored=true
+node_modules/** linguist-vendored=true

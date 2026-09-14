@@ -1,0 +1,38 @@
+{
+  "name": "@molkex/threads-private-api",
+  "version": "1.0.0",
+  "description": "Modern, headless Threads (Barcelona) Mobile Private API SDK for Node.js and TypeScript. Real-time sub-80ms search, nested discussion trees, and external thread replies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "threads",
+    "threads-api",
+    "threads-private-api",
+    "meta-threads",
+    "barcelona",
+    "threads-scraper",
+    "trend-radar",
+    "subzeroid",
+    "dilame"
+  ],
+  "author": "molkex <molkex@users.noreply.github.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molkex/threads-private-api.git",
+    "directory": "ts"
+  },
+  "bugs": {
+    "url": "https://t.me/mxmtkchk"
+  },
+  "homepage": "https://github.com/molkex/threads-private-api#readme",
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,34 @@
+# threads-private-api Documentation
+
+> Headless Threads (com.instagram.barcelona) Mobile Private API SDK for Python & TypeScript.
+
+## Core Capabilities
+- Sub-80ms real-time keyword search across public Threads discussions.
+- Ingest complete nested discussion trees (parent, root, replies, quotes).
+- Reply directly to ANY external thread post (impossible with official Graph API).
+- Dual presets: Threads iOS (iPhone 15 Pro, iOS 17.6.1) and Threads Android (Samsung Galaxy A34, Android 14).
+- Unified Meta authentication format: Bearer IGT:2:...
+- Dual SDK: Python (threadsflow) and TypeScript (@molkex/threads-private-api).
+
+## Python Usage
+```python
+from threadsflow import ThreadsAPI, ThreadsSession
+
+threads = ThreadsAPI(device_preset="threads_ios")
+posts = threads.search_posts("artificial intelligence", limit=10)
+tree = threads.get_thread("3141592653589793238")
+reply_res = threads.reply(parent_post_id="3141592653589793238", text="Agreed!")
+```
+
+## TypeScript Usage
+```typescript
+import { ThreadsAPI, ThreadsSession } from "@molkex/threads-private-api";
+
+const threads = new ThreadsAPI({ devicePreset: "threads_ios" });
+const posts = await threads.searchPosts("artificial intelligence", 10);
+const tree = await threads.getThread("3141592653589793238");
+await threads.reply("3141592653589793238", "Agreed!");
+```
+
+## Contact & Commercial Licensing
+- Telegram: https://t.me/mxmtkchk (@mxmtkchk)

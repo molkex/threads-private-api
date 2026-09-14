@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "threads-private-api"
+version = "1.0.0"
+description = "Unofficial Threads Private API & Trend Radar SDK for Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [
+    { name = "molkex", email = "molkex@users.noreply.github.com" }
+]
+keywords = [
+    "threads",
+    "threads-api",
+    "threads-scraper",
+    "meta-threads",
+    "barcelona",
+    "reverse-engineering",
+    "social-radar",
+    "real-time-search",
+    "growth-automation"
+]
+dependencies = [
+    "httpx[http2]>=0.27.0",
+    "pydantic>=2.7.0"
+]
+
+[project.urls]
+Homepage = "https://t.me/mxmtkchk"
+Repository = "https://github.com/molkex/threads-private-api"
+Issues = "https://t.me/mxmtkchk"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
